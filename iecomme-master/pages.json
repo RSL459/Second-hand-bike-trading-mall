@@ -1,0 +1,216 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "iEComme",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/login/register",
+			"style": {
+				"navigationBarTitleText": "用户注册",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/Product/Product List",
+			"style": {
+				"navigationBarTitleText": "商品列表",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/Product/ProductDetail",
+			"style": {
+				"navigationBarTitleText": "商品详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/User/User Center",
+			"style": {
+				"navigationBarTitleText": "用户中心",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/Product/Product upload",
+			"style": {
+				"navigationBarTitleText": "卖闲置",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/User/sold",
+			"style": {
+				"navigationBarTitleText": "我卖出的",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/User/published",
+			"style": {
+				"navigationBarTitleText": "我发布的",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/User/bought",
+			"style": {
+				"navigationBarTitleText": "我购买的",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/chat/chat",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "我的消息",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"app-plus": {
+					"scrollIndicator": "none",
+					"titleNView": {
+						"searchInput": {
+							"placeholder": "输入关键词查询",
+							"disabled": false,
+							"align": "left",
+							"autoFocus": true,
+							"borderRadius": "15px",
+							"backgroundColor": "#F7F7F7",
+							"placeholderColor": "#B3B3B3"
+						},
+						"buttons": [{
+							"float": "right",
+							"color": "#636263",
+							"text": "搜索",
+							"fontSize": "16px",
+							"width": "60px"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/search-list/search-list",
+			"style": {
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+			"path": "pages/shopcart/shopcart",
+			"style": {
+				"app-plus": {
+					"titleNView": false,
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/login-code/login-code",
+			"style": {
+				"navigationBarTitleText": "输入验证码",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/my-add-path/my-add-path",
+			"style": {
+				"navigationBarTitleText": "新增地址",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"app-plus": {
+					"scrollIndicator": "none",
+					"titleNView": {
+						"buttons": [{
+							"float": "right",
+							"color": "#636263",
+							"text": "保存",
+							"fontSize": "16px",
+							"width": "60px"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/my-path-list/my-path-list",
+			"style": {
+				"navigationBarTitleText": "地址管理",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/login-tel/login-tel",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#6ec8ff",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#9799a5",
+		"selectedColor": "#87bce9",
+		"list": [{
+			"text": "首页",
+			"pagePath": "pages/home/home",
+			"iconPath": "static/home1.png",
+			"selectedIconPath": "static/home2.png"
+		}, {
+			"text": "收藏",
+			"pagePath": "pages/shopcart/shopcart",
+			"iconPath": "static/fav1.png",
+			"selectedIconPath": "static/fav2.png"
+		}, {
+			"text": "卖闲置",
+			"pagePath": "pages/Product/Product upload",
+			"iconPath": "static/classify1.png",
+			"selectedIconPath": "static/classify2.png"
+		}, {
+			"text": "消息",
+			"pagePath": "pages/message/message",
+			"iconPath": "static/message1.png",
+			"selectedIconPath": "static/message2.png"
+		}, {
+			"text": "我的",
+			"pagePath": "pages/User/User Center",
+			"iconPath": "static/me1.png",
+			"selectedIconPath": "static/me2.png"
+		}]
+	},
+	"uniIdRouter": {},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "pages/home/home", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}
